@@ -19,7 +19,11 @@ $ npm install
 ```
 
 ```
-$ node index.js
+$ npm start
 ```
 
 # Steps to Tests
+
+```
+$ npm test
+```
