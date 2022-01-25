@@ -5,8 +5,8 @@ let myNumber = 0;
 function printSomething(myHighestNumber) {
     try {
         if (myHighestNumber <= 0) throw new Error(alerts.loop.not_zero);
-        if (typeof myHighestNumber !== "number") throw new Error(alerts.loop.not_number);
-        if (myNumber) throw new Error(alerts.loop.not_empty);
+        //if (typeof myHighestNumber !== "number") throw new Error(alerts.loop.not_number);
+        //if (myNumber) throw new Error(alerts.loop.not_empty);
 
         for (let x = 0; x < myHighestNumber; x++) {
             let myRealValue = x + 1;
@@ -21,8 +21,10 @@ function printSomething(myHighestNumber) {
             print ? console.log(print) : console.log(myRealValue);
         }
     } catch (err) {
-        console.log(err.name, " - ", err.message);
+        console.log(err);
     }
 }
 
 printSomething(myNumber);
+
+module.exports = printSomething;
